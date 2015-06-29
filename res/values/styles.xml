@@ -1,0 +1,14 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+ 
+        <item name="colorPrimary">@color/lightblue</item>
+        <item name="colorPrimaryDark">@color/lightblue</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>

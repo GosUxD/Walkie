@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    androidTestCompile "com.android.support:support-v4:21.0.0"
+    compile project(':Bolts')
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            resources.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+        androidTest {
+            java.srcDirs = ['src']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}

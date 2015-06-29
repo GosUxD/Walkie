@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Walkie</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="facebook_app_id">787102958053531</string>
+    
+    <string name="drawer_opened">Navigation Bar Closed</string>
+    <string name="drawer_closed">Navigation Bar Opened</string>
+
+    <string-array name="entries">
+        <item>Мој Профил</item>
+        <item>Популарни Места</item>
+        <item>Големи Евенти</item>
+        <item>Галерија</item>
+    </string-array>
+
+</resources>

@@ -20,6 +20,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 @SuppressWarnings("deprecation")
 public class MainScreen extends ActionBarActivity {
@@ -69,7 +70,7 @@ public class MainScreen extends ActionBarActivity {
 		};
 		drawerLayout.setDrawerListener(drawerListener);
 		
-		FragmentManager fm = getSupportFragmentManager();
+		final FragmentManager fm = getSupportFragmentManager();
 		
 		fm.beginTransaction().add(R.id.fragment_container, fragment).commit();
 				
@@ -79,6 +80,13 @@ public class MainScreen extends ActionBarActivity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				// TODO Auto-generated method stub
+				switch(position) {
+				
+				case 0:
+					CameraFragment cameraFragment = new CameraFragment();
+					fm.beginTransaction().replace(R.id.fragment_container, cameraFragment).commit();
+					break;
+				}
 
 			}
 		});

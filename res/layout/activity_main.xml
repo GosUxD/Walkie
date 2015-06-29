@@ -17,7 +17,8 @@
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawerLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="#00000000" >
 
         <FrameLayout
             android:id="@+id/fragment_container"
@@ -45,6 +46,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="start" />
+
+            <FrameLayout
+                android:id="@+id/bugfixview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
         </LinearLayout>
     </android.support.v4.widget.DrawerLayout>
 
